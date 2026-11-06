@@ -293,12 +293,13 @@ p { margin: 0 0 1em; }
 @media (max-width: 640px) { .service-card, .service-card--wide { grid-column: span 12; } }
 
 /* Galería */
-.gallery { columns: 4 240px; column-gap: var(--space-md); }
+.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-md); }
+@media (max-width: 900px) { .gallery { grid-template-columns: repeat(2, 1fr); } .gallery-item:first-child { grid-column: 1 / -1; aspect-ratio: 16 / 10; } }
 .gallery-item {
-  break-inside: avoid; margin-bottom: var(--space-md); border-radius: var(--radius-md); overflow: hidden;
+  aspect-ratio: 4 / 5; border-radius: var(--radius-md); overflow: hidden;
   position: relative; display: block; width: 100%; padding: 0; cursor: zoom-in;
 }
-.gallery-item img { width: 100%; height: auto; transition: transform 0.9s var(--ease-out); }
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.9s var(--ease-out); }
 .gallery-item::after {
   content: ""; position: absolute; inset: 0;
   background: linear-gradient(180deg, transparent 55%, rgba(43, 30, 27, 0.55));

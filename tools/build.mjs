@@ -55,6 +55,7 @@ const photos = [
   { f: "unas-micro-frances-blanco.jpg", alt: "Uñas cortas nude con micro francés blanco", cap: "Micro francés", w: 1440, h: 1800 },
   { f: "unas-frances-rosa-neon.jpg", alt: "Uñas cuadradas con francés rosa neón y brillo dorado", cap: "Francés rosa neón", w: 1440, h: 1800 },
   { f: "unas-frances-amarillo-pastel.jpg", alt: "Uñas almendra nude con francés amarillo pastel", cap: "Francés amarillo pastel", w: 1440, h: 1702 },
+  { f: "unas-navidenas-frances-luces.jpg", alt: "Uñas cuadradas con francés blanco y diseño navideño a mano de luces de colores y personaje verde con gorro", cap: "Navideñas pintadas a mano", w: 1440, h: 1800 },
 ];
 const P = Object.fromEntries(photos.map((p) => [p.f.replace(".jpg", ""), p]));
 
