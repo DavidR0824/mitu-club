@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://davidr0824.github.io/mitu-club/sitemap.xml
